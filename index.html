@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <base href="/fluigiapp/">
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>F Luigi</title>
-  <meta name="description" content="F Luigi — a private, one-time submission app. Submit photos and a short pitch to be considered." />
+  <meta name="description" content="F Luigi — a private, one-time submission app." />
   <style>
     body{margin:0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:#130380;color:#fff}
     .wrap{max-width:820px;margin:0 auto;padding:48px 20px}
@@ -18,31 +17,28 @@
 </head>
 <body>
   <div class="wrap">
-    <h1 style="margin:0 0 8px 0;">F Luigi</h1>
-    <p class="muted" style="margin:0 0 22px 0;">A private, one-time submission app.</p>
+    <h1>F Luigi</h1>
+    <p class="muted">A private, one-time submission app.</p>
 
     <div class="card">
-      <h2 style="margin-top:0;">What it does</h2>
+      <h2>What it does</h2>
       <ul>
-        <li>Submit up to a set number of photos and a short pitch.</li>
-        <li>One submission per person/email.</li>
-        <li>Submissions are kept private and reviewed by the app admin.</li>
+        <li>Submit photos and a short written pitch.</li>
+        <li>One submission per person.</li>
+        <li>All submissions are private and reviewed by the app admin.</li>
       </ul>
 
-      <h2>Privacy</h2>
-      <p class="muted">
-        We collect your account email (including Apple relay emails), your pitch, and uploaded photos for review.
-        We do not sell your data.
-      </p>
-
-      <a class="btn" href="/support.html">Support</a>
-      <a class="btn" href="/privacy.html">Privacy Policy</a>
+      <a class="btn" href="support.html">Support</a>
+      <a class="btn" href="privacy.html">Privacy Policy</a>
     </div>
 
     <p class="muted" style="margin-top:18px;">
       © <span id="y"></span> JustJoshinMedia
     </p>
   </div>
-  <script>document.getElementById("y").textContent=new Date().getFullYear()</script>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
