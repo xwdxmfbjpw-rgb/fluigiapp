@@ -10,53 +10,46 @@
     .card{background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.25);border-radius:18px;padding:22px}
     a{color:#fff}
     .muted{opacity:.85}
-    h2{margin-top:18px}
     ul{line-height:1.6}
   </style>
 </head>
 <body>
   <div class="wrap">
-    <h1 style="margin:0 0 8px 0;">Privacy Policy</h1>
-    <p class="muted" style="margin:0 0 22px 0;">Effective date: <span id="d"></span></p>
+    <h1>Privacy Policy</h1>
+    <p class="muted">Effective date: <span id="d"></span></p>
 
     <div class="card">
-      <h2 style="margin-top:0;">What we collect</h2>
+      <h2>What we collect</h2>
       <ul>
-        <li>Account identifier (email address, including Apple relay emails)</li>
-        <li>Your submission content (photos and your written pitch)</li>
-        <li>Basic technical logs for reliability (e.g., error messages)</li>
+        <li>Email address (including Apple relay emails)</li>
+        <li>Photos and written submissions</li>
+        <li>Basic technical logs for reliability</li>
       </ul>
 
       <h2>How we use it</h2>
       <ul>
-        <li>To review and manage submissions</li>
-        <li>To contact you if needed regarding your submission (only if you granted permission)</li>
-        <li>To prevent duplicate submissions</li>
+        <li>To review submissions</li>
+        <li>To prevent duplicate entries</li>
+        <li>To contact you if you gave permission</li>
       </ul>
 
       <h2>Sharing</h2>
-      <p class="muted">
-        We do not sell your personal information. Submissions are kept private and are not shared with third parties.
-      </p>
-
-      <h2>Data retention</h2>
-      <p class="muted">
-        We retain submissions as long as necessary to operate the service, then delete when no longer needed.
-      </p>
+      <p class="muted">We do not sell or share personal data.</p>
 
       <h2>Contact</h2>
       <p class="muted">
-        Questions? Email <a href="mailto:fluigiapp@gmail.com">fluigiapp@gmail.com</a>.
+        Email <a href="mailto:fluigiapp@gmail.com">fluigiapp@gmail.com</a>
       </p>
 
-      <a href="./index.html">← Back</a>
+      <p style="margin-top:18px;">
+        <a href="./">← Back</a>
+      </p>
     </div>
   </div>
 
   <script>
-    const dt = new Date();
     document.getElementById("d").textContent =
-      dt.toLocaleDateString(undefined, {year:"numeric", month:"long", day:"numeric"});
+      new Date().toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" });
   </script>
 </body>
 </html>
